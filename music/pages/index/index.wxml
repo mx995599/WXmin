@@ -1,0 +1,56 @@
+<!--pages/index/index.wxml-->
+<view class="header">
+  <view class="header-img"><image src="../../img/logo.png"></image></view>
+  <view class="header-item">分类</view>
+  <view class="header-item">歌手</view>
+  <view class="header-item active">榜单</view>
+  <view class="header-item">我的</view>
+  <view bindtap="search" class="header-item">搜索</view>
+</view>
+<view class="content">
+  <view class="list-item" bindtap="hots" data-id='{{item.id}}'>
+    <view class="list-img">
+      <image src="{{img1.pic_s192}}"></image>
+    </view>
+    <view class="name-list"  >
+      <view class="name" wx:for="{{list1}}" wx:key="index" >
+        <text>{{index+1}}</text>{{item.title}}
+      </view>
+    </view>
+    
+  </view>
+   <view class="list-item" bindtap="news">
+    <view class="list-img">
+      <image src="{{img2.pic_s192}}"></image>
+    </view>
+    <view class="name-list">
+      <view class="name" wx:for="{{list2}}" wx:key="index">
+        <text>{{index+1}}</text>{{item.title}}
+      </view>
+    </view>
+    
+  </view>
+  <view class="list-item" bindtap="jin">
+    <view class="list-img">
+      <image src="{{img3.pic_s192}}"></image>
+    </view>
+    <view class="name-list">
+     <view class="name" wx:for="{{list3}}" wx:key="index">
+        <text>{{index+1}}</text>{{item.title}}
+      </view>
+    </view>
+    
+  </view>
+  <view class="list-item" bindtap="old">
+    <view class="list-img">
+      <image src="{{img4.pic_s192}}"></image>
+    </view>
+    <view class="name-list">
+     <view class="name" wx:for="{{list4}}" wx:key="index">
+        <text>{{index+1}}</text>{{item.title}}
+      </view>
+    </view>
+    
+  </view>
+  
+</view>

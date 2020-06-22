@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/hots/hots",
+    "pages/search/search",
+    "pages/news/news",
+    "pages/jin/jin",
+    "pages/old/old",
+    "pages/display/display"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E13228",
+    "navigationBarTitleText": "网易云",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

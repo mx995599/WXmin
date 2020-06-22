@@ -1,0 +1,19 @@
+<!--pages/jin/jin.wxml-->
+
+<view class="img-nav"><image src="{{img.pic_s192}}"></image></view>
+<view class="download">
+  <view class="down">批量下载 ↓ </view>
+  <view class="app">在APP中打开</view>
+</view>
+ <view class="song-list" wx:for="{{list}}" wx:key="index" data-id='{{item.id}}'>
+  <view class="num">{{index+1}}</view>
+  <view class="song-detail" bindtap="play" data-id="item.id">
+    <view class="song-img"><image src=""></image></view>
+    <view class="song">
+      <view class="song-name">{{item.album_title}}</view>
+      <view class="song-desc">{{item.author}}</view>
+    </view>
+  </view>
+    <view class="xia">↓</view>
+</view>
+

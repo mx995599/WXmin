@@ -1,0 +1,64 @@
+<!--pages/display/display.wxml-->
+<view class="container">
+  <!-- 歌名和演唱者 -->
+  <view class="header">
+    <view>三十岁的女人</view>
+    <view class="author">赵雷</view>
+  </view>
+  <!-- 歌词部分，可滚动 -->
+  <scroll-view class="middle" scroll-y="true">
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>歌词放置处</view>
+    <view>末尾</view>
+
+  </scroll-view>
+
+  <!-- 底部进度条 -->
+  <view class="footer">
+
+    <view class="progress-bar">
+      <view>00:00</view>
+      <view class="progress-line">
+        <view class="progress-bg"></view>
+        <view class="progress-red"></view>
+        <view class="progress-dot">
+          <icon class="iconfont iconyuandian1"></icon>
+        </view>
+      </view>
+      <view>00:00</view>
+    </view>
+
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="btn-group">
+    <view class="prev">
+      上一曲
+    </view>
+    <view class="play">
+      播放
+    </view>
+    <view class="next">
+      下一曲
+    </view>
+  </view>
+
+<audio src="{{src}}" id="myAudio" ></audio>
+</view>

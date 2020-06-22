@@ -1,0 +1,22 @@
+<!--pages/search/search.wxml-->
+<view class='header'>
+  <view class='search'>
+    <input type="text" placeholder="搜索歌曲、歌手、专辑" bindinput='search'></input>
+  </view>
+</view>
+ <view class="song-list" wx:for="{{list}}" wx:key="index">
+  <view class="num">{{index+1}}</view>
+  <view class="song-detail">
+    <view class="song-img"><image src=""></image></view>
+    <view class="song">
+      <view class="song-name">{{item.albumname}}</view>
+      <view class="song-desc">{{item.artistname}}</view>
+    </view>
+  </view>
+    <view class="xia">↓</view>
+</view>
+<view class="his">搜索历史</view>
+<view class="list">
+  {{his}}
+</view>
+
